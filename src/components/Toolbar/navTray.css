@@ -1,0 +1,43 @@
+.navTray {
+    height: 100%;
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 70%;
+    max-width: 400px;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+  }
+  
+  .navTray.open {
+    transform: translateX(0);
+  }
+  
+
+.navTray ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navTray li {
+    margin: 0.5rem 0;
+  }
+  
+.navTray a {
+    color: #521751;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+.navTray a:hover,
+.navTray a:active {
+    color: #fa923f;
+  }

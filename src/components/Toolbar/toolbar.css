@@ -1,0 +1,25 @@
+.toolbar {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 80px;
+}
+.logo {
+    font-weight: 400;
+}
+.toolbarSpacer {
+    flex: 1;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (min-width: 769px) {
+    .toolbarNav {
+        display: none;
+    }
+}
