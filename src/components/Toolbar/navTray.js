@@ -16,10 +16,10 @@ class NavTray extends React.Component {
             <div className="navTrayClose" onClick={this.props.menuToggleClick}>X</div>
             <ul>
                 <li>
-                    <Link to="/gallery" onClick={this.props.menuToggleClick}>Gallery</Link>
+                    <Link to="/aboutus" onClick={this.props.menuToggleClick}>About Us</Link>
                 </li>
                 <li>
-                    <Link to="/aboutus" onClick={this.props.menuToggleClick}>About Us</Link>
+                    <Link to="/gallery" onClick={this.props.menuToggleClick}>Gallery</Link>
                 </li>
             </ul>
         </div>
