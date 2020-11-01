@@ -13,6 +13,7 @@ class NavTray extends React.Component {
 
         return (
         <div className={navClasses}>
+            <div className="navTrayClose" onClick={this.props.menuToggleClick}>X</div>
             <ul>
                 <li>
                     <Link to="/gallery" onClick={this.props.menuToggleClick}>Gallery</Link>

@@ -1,21 +1,21 @@
 import React from 'react';
-import './icon.css';
+import './iconExternal.css';
 import { Link } from 'react-router-dom';
 
-class Icon extends React.Component {
+class IconExternal extends React.Component {
     render() {
         const defaultWidth = 32;
         const defaultHeight = 32;
 
         return (
-            <Link to={this.props.href} target={this.props.target != null ? this.props.target : "_self"}>
+            <a href={this.props.href} target="_blank" rel="noreferrer">
                 <img className="icon" src={this.props.src} alt={this.props.alt}
                         width={this.props.width != null ? this.props.width : defaultWidth} 
                         height={this.props.height != null ? this.props.height : defaultHeight}                        
                 />
-            </Link>
+            </a>
         );
     }
 }
 
-export default Icon;
+export default IconExternal;
