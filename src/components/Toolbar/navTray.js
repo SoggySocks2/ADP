@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './navTray.css';
 
 class NavTray extends React.Component {
@@ -9,14 +10,15 @@ class NavTray extends React.Component {
         {
             navClasses = 'navTray open';
         }
+
         return (
         <div className={navClasses}>
             <ul>
                 <li>
-                    <a href="/gallery">Gallery</a>
+                    <Link to="/gallery" onClick={this.props.menuToggleClick}>Gallery</Link>
                 </li>
                 <li>
-                    <a href="/aboutUs">About Us</a>
+                    <Link to="/aboutus" onClick={this.props.menuToggleClick}>About Us</Link>
                 </li>
             </ul>
         </div>

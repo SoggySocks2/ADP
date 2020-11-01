@@ -1,3 +1,8 @@
+.toolbarContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 .toolbar {
     background-color: #fff;
     display: flex;
@@ -12,14 +17,35 @@
 .toolbarSpacer {
     flex: 1;
 }
-.icons {
+.toolbarIcons {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.toolbarLinks {
+    display: none;
 }
 
 @media (min-width: 769px) {
     .toolbarNav {
         display: none;
+    }
+    .toolbarIcons {
+        display: none;
+    }
+    .toolbarLinks {
+        display: flex;
+        flex: 1 0 auto;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .toolbarLinks ul {
+        display: flex;
+        list-style: none;
+    }
+    .toolbarLinks ul a {
+        color: #000;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
     }
 }

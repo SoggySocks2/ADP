@@ -5,26 +5,22 @@ import Toolbar from './components/Toolbar/toolbar';
 import Home from './pages/home';
 import Gallery from './pages/gallery';
 import AboutUs from './pages/aboutUs';
+import Email from './pages/email';
+import Phone from './pages/phone';
 
 class App extends React.Component {
-
-  handleEmailClick = () => {
-    alert('email clicked');
-  }
-
-  handlePhoneClick = () => {
-    alert('phone clicked');
-  }
 
   render() {
       return (
         <div className="app">
           <Router>
-            <nav><Toolbar emailClick={this.handleEmailClick} phoneClick={this.handlePhoneClick} /></nav>
+            <Toolbar />
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/gallery" exact component={Gallery} />
-              <Route path="/aboutUs" exact component={AboutUs} />
+              <Route path="/aboutus" exact component={AboutUs} />
+              <Route path="/email" exact component={Email} />
+              <Route path="/phone" exact component={Phone} />
             </Switch>
           </Router>
         </div>

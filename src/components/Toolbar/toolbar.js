@@ -6,6 +6,7 @@ import phoneIcon from '../../images/phone.svg';
 import emailIcon from '../../images/email.svg';
 import ToolbarToggleButton from './toolbarToggleButton';
 import NavTray from './navTray';
+import { Link } from 'react-router-dom';
 
 class Toolbar extends React.Component {
 
@@ -22,18 +23,28 @@ class Toolbar extends React.Component {
     render() {
 
         return (
-            <>
+            <nav className="toolbarContainer">
                 <div className="toolbar">
                     <div><Logo /></div>
                     <div className="toolbarSpacer" />
-                    <div className="icons">
-                        <Icon src={emailIcon} alt={"Email"} width="40" height="40" click={this.props.emailClick} />
-                        <Icon src={phoneIcon} alt={"Phone"} width="40" height="40" click={this.props.phoneClick} />
+                    <div className="toolbarIcons">
+                        <Icon src={emailIcon} alt={"Email"} width="40" height="40" href="email" />
+                        <Icon src={phoneIcon} alt={"Phone"} width="40" height="40" href="phone" />
                     </div>
-                    <nav><ToolbarToggleButton menuToggleClick={this.handleMenuToggleClick} /></nav>
+                    <div className="toolbarLinks">
+                        <ul>
+                            <li>
+                                <Link to="/aboutus" className="toolbar-nav-link">About Us</Link>
+                            </li>
+                            <li>
+                                <Link to="/gallery" className="toolbar-nav-link">Gallery</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div><ToolbarToggleButton menuToggleClick={this.handleMenuToggleClick} /></div>
                 </div>
-                <div><NavTray show={this.state.navTrayOpen} /></div>
-            </>
+                <NavTray show={this.state.navTrayOpen}  menuToggleClick={this.handleMenuToggleClick} />
+            </nav>
         );
     };
 }
