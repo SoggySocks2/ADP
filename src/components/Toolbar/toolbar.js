@@ -28,8 +28,8 @@ class Toolbar extends React.Component {
                     <div><Logo /></div>
                     <div className="toolbarSpacer" />
                     <div className="toolbarIcons">
-                        <Icon src={emailIcon} alt={"Email"} width="40" height="40" href="email" />
-                        <Icon src={phoneIcon} alt={"Phone"} width="40" height="40" href="phone" />
+                        <Icon src={emailIcon} alt={"Email"} width="40" height="40" href="contactus" />
+                        <Icon src={phoneIcon} alt={"Phone"} width="40" height="40" href="contactus" />
                     </div>
                     <div className="toolbarLinks">
                         <ul>
