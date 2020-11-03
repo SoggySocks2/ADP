@@ -4,7 +4,6 @@ import IconExternal from '../icon/iconExternal';
 import facebookIcon from '../../images/facebook.svg';
 import linkedInIcon from '../../images/linkedin.svg';
 import twitterIcon from '../../images/twitter.svg';
-import { Link } from 'react-router-dom';
 
 class footer extends React.Component {
     render() {

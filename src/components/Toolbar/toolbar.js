@@ -39,6 +39,9 @@ class Toolbar extends React.Component {
                             <li>
                                 <Link to="/gallery" className="toolbar-nav-link">Gallery</Link>
                             </li>
+                            <li>
+                                <Link to="/contactus" className="toolbar-nav-link">Contact Us</Link>
+                            </li>
                         </ul>
                     </div>
                     <div><ToolbarToggleButton menuToggleClick={this.handleMenuToggleClick} /></div>

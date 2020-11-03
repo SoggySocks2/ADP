@@ -1,6 +1,5 @@
 import React from 'react';
 import './iconExternal.css';
-import { Link } from 'react-router-dom';
 
 class IconExternal extends React.Component {
     render() {
