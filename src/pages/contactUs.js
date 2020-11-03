@@ -41,7 +41,7 @@ class ContactUs extends React.Component {
                 <span className="flipper">
                   <span className="flipper-object flipper-vertical">
                     <span className="panel front">Ready?</span>
-                    <span className="panel back">Submit</span>
+                    <span className="panel back">Send</span>
                   </span>
                 </span>
               </button>
