@@ -7,7 +7,7 @@ class ContactUs extends React.Component {
           <div className="contactUsWrapper">
             <div className="form-Intro">
               <h3>Get in touch</h3>
-              <h4>Dop us a line, send us an email or contact us via the social media links at the bottom of this page.</h4>
+              <h4>Drop us a line, send us an email or contact us via the social media links at the bottom of this page.</h4>
             </div>
 
             <form className="form-Wrapper" id="telephone" method="post">
@@ -51,7 +51,7 @@ class ContactUs extends React.Component {
             <form className="form-Wrapper" id="address" method="post">
               <fieldset className="form-About_Wrapper">
                 <legend><span>Find us</span></legend>
-                <div className="form-Input_Wrapper address">
+                <div className="form-Input_Wrapper address" id="addressWrapper">
                   <div><label>Absolute Precision Auto Detailing</label></div>
                   <div><label>Unit 2, Falcon estate, Swan road,</label></div>
                   <div><label>Mochdre Business park, Mochdre</label></div>

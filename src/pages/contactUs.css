@@ -42,7 +42,7 @@
     flex-direction: column-reverse;
   }
 
-  .form-Input_Wrapper .address{
+  .form-Input_Wrapper.address{
     flex-direction: column;
   }
 
